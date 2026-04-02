@@ -1,6 +1,7 @@
 {
   "name": "grind_irl",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.1.0",
   "description": "Crafting x Gamification web-based game with simple UI and minimum input effort to high player retention, engagement and fun.",
   "keywords": [
     "gamification",
@@ -22,13 +23,28 @@
   },
   "license": "ISC",
   "author": "Keyaki",
-  "type": "commonjs",
-  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.2.4",
+    "react-dom": "^19.2.3",
     "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
   }
 }

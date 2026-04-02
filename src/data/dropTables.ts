@@ -14,7 +14,7 @@ export const DROP_TABLES: DropTable[] = [
     entries: [
       { itemId: ITEM_IDS.WOOD_LOG, rarity: "common", weight: 8, minEffort: 1 },
       { itemId: ITEM_IDS.STUDY_SCROLL, rarity: "common", weight: 5, minEffort: 4 },
-      { itemId: ITEM_IDS.BASIC_CRATE, rarity: "uncommon", weight: 3, minEffort: 8 },
+      { itemId: ITEM_IDS.WOODEN_CRATE, rarity: "uncommon", weight: 3, minEffort: 8 },
       { itemId: ITEM_IDS.MYSTIC_DUST, rarity: "rare", weight: 1, minEffort: 12 },
     ],
   },
@@ -31,7 +31,7 @@ export const DROP_TABLES: DropTable[] = [
       { itemId: ITEM_IDS.IRON_ORE, rarity: "common", weight: 9, minEffort: 1 },
       { itemId: ITEM_IDS.COAL, rarity: "common", weight: 7, minEffort: 1 },
       { itemId: ITEM_IDS.WORK_GLOVES, rarity: "uncommon", weight: 2, minEffort: 10 },
-      { itemId: ITEM_IDS.BASIC_CRATE, rarity: "rare", weight: 1, minEffort: 16 },
+      { itemId: ITEM_IDS.SUPPLY_BOX, rarity: "rare", weight: 1, minEffort: 16 },
     ],
   },
   {
@@ -47,7 +47,9 @@ export const DROP_TABLES: DropTable[] = [
       { itemId: ITEM_IDS.WOOD_LOG, rarity: "common", weight: 5, minEffort: 1 },
       { itemId: ITEM_IDS.IRON_ORE, rarity: "common", weight: 5, minEffort: 1 },
       { itemId: ITEM_IDS.STUDY_SCROLL, rarity: "uncommon", weight: 2, minEffort: 6 },
+      { itemId: ITEM_IDS.WOODEN_CRATE, rarity: "uncommon", weight: 1, minEffort: 9 },
       { itemId: ITEM_IDS.MYSTIC_DUST, rarity: "rare", weight: 1, minEffort: 15 },
+      { itemId: ITEM_IDS.ANCIENT_CHEST, rarity: "rare", weight: 1, minEffort: 24 },
     ],
   },
 ];

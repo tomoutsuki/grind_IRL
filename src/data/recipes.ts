@@ -36,14 +36,38 @@ export const RECIPES: Recipe[] = [
     tags: ["alchemy", "consumable"],
   },
   {
-    id: "recipe-assemble-basic-crate",
-    name: "Assemble Basic Crate",
+    id: "recipe-assemble-wooden-crate",
+    name: "Assemble Wooden Crate",
     inputs: [
       { itemId: ITEM_IDS.WOOD_LOG, quantity: 5 },
       { itemId: ITEM_IDS.IRON_INGOT, quantity: 1 },
     ],
-    output: { itemId: ITEM_IDS.BASIC_CRATE, quantity: 1 },
+    output: { itemId: ITEM_IDS.WOODEN_CRATE, quantity: 1 },
     craftTimeSeconds: 25,
     tags: ["crate", "assembly"],
+  },
+  {
+    id: "recipe-assemble-supply-box",
+    name: "Assemble Supply Box",
+    inputs: [
+      { itemId: ITEM_IDS.WOODEN_CRATE, quantity: 1 },
+      { itemId: ITEM_IDS.IRON_INGOT, quantity: 2 },
+      { itemId: ITEM_IDS.COAL, quantity: 3 },
+    ],
+    output: { itemId: ITEM_IDS.SUPPLY_BOX, quantity: 1 },
+    craftTimeSeconds: 30,
+    tags: ["crate", "upgrade"],
+  },
+  {
+    id: "recipe-assemble-ancient-chest",
+    name: "Assemble Ancient Chest",
+    inputs: [
+      { itemId: ITEM_IDS.SUPPLY_BOX, quantity: 1 },
+      { itemId: ITEM_IDS.MYSTIC_DUST, quantity: 2 },
+      { itemId: ITEM_IDS.IRON_INGOT, quantity: 2 },
+    ],
+    output: { itemId: ITEM_IDS.ANCIENT_CHEST, quantity: 1 },
+    craftTimeSeconds: 45,
+    tags: ["crate", "legendary"],
   },
 ];

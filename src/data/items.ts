@@ -8,9 +8,11 @@ export const ITEM_IDS = {
   STUDY_SCROLL: "55555555-5555-4555-8555-555555555555",
   WORK_GLOVES: "66666666-6666-4666-8666-666666666666",
   TRAINING_SWORD: "77777777-7777-4777-8777-777777777777",
-  BASIC_CRATE: "88888888-8888-4888-8888-888888888888",
+  WOODEN_CRATE: "88888888-8888-4888-8888-888888888888",
   MYSTIC_DUST: "99999999-9999-4999-8999-999999999999",
   STAMINA_POTION: "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+  ANCIENT_CHEST: "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+  SUPPLY_BOX: "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
 } as const;
 
 export const ITEMS: Item[] = [
@@ -79,10 +81,10 @@ export const ITEMS: Item[] = [
     effects: [{ type: "taskStreakBonus", value: 3 }],
   },
   {
-    id: ITEM_IDS.BASIC_CRATE,
-    name: "Basic Crate",
-    description: "Crate that rolls additional random loot.",
-    assetPath: "/assets/items/basic_crate.png",
+    id: ITEM_IDS.WOODEN_CRATE,
+    name: "Wooden Crate",
+    description: "Starter crate with basic materials and utility drops.",
+    assetPath: "/assets/items/wooden_crate.png",
     category: "crate",
     attributes: { tier: 1 },
     effects: [{ type: "openCrate", value: 1 }],
@@ -105,6 +107,24 @@ export const ITEMS: Item[] = [
     attributes: { staminaBoost: 20 },
     effects: [{ type: "stamina", value: 20, duration: 1200 }],
     duration: 1200,
+  },
+  {
+    id: ITEM_IDS.ANCIENT_CHEST,
+    name: "Ancient Chest",
+    description: "High-tier crate with strong rare chances.",
+    assetPath: "/assets/items/ancient_chest.png",
+    category: "crate",
+    attributes: { tier: 3 },
+    effects: [{ type: "openCrate", value: 1 }],
+  },
+  {
+    id: ITEM_IDS.SUPPLY_BOX,
+    name: "Supply Box",
+    description: "Mid-tier crate focused on production resources.",
+    assetPath: "/assets/items/supply_box.png",
+    category: "crate",
+    attributes: { tier: 2 },
+    effects: [{ type: "openCrate", value: 1 }],
   },
 ];
 
